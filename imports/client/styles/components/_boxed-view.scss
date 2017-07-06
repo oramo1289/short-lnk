@@ -1,0 +1,29 @@
+.boxed-view {
+  align-items: center;
+  background-color: $boxed-view-overlay-background;
+  display: flex;//para centrar y necesita otras dos propiedades aling-items y justify-content
+  height: 100vh;//toma de valor el 100 porciento del viewport heigth
+  justify-content: center;
+  width: 100vw;//toma de valor el 100 porciento del viewport width
+}
+
+.boxed-view__box {//guión bajo porque es un elemento que le pertenece a boxed-view
+  background-color: $boxed-view-background;
+  padding: 2.4rem;
+  text-align: center;
+  width: 24rem;
+}
+
+.boxed-view__form {
+  display: flex;
+  flex-direction: column;//pone los elementos apilados en una columna
+}
+
+.boxed-view--modal {
+  background-color: fade-out($boxed-view-overlay-background, .3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
